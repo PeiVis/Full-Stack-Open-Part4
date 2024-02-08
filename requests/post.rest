@@ -1,0 +1,30 @@
+POST http://localhost:3003/api/blogs HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzZGFzZGFzZCIsImlkIjoiNjVjNDJhNWEzYTAxZGIyM2QzNTFjNTVmIiwiaWF0IjoxNzA3MzU0NzIxLCJleHAiOjE3MDczNTgzMjF9.FG4aHd-G5vwmB9-l-VrMe0Y5htYPAldRp5jYUXxX--k
+
+{
+  "title": "dgf",
+  "author": "author test123",
+  "url": "dsgf",
+  "likes": 1004
+}
+
+####
+
+POST http://localhost:3003/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "asdasdasd",
+    "name": "tasdadssda",
+    "password": "werewrwre"
+}
+
+#####
+POST http://localhost:3003/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "asdasdasd",
+    "password": "werewrwre"
+}
