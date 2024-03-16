@@ -1,7 +1,6 @@
 POST http://localhost:3003/api/blogs HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzZGFzZGFzZCIsImlkIjoiNjVjNDJhNWEzYTAxZGIyM2QzNTFjNTVmIiwiaWF0IjoxNzA3MzU0NzIxLCJleHAiOjE3MDczNTgzMjF9.FG4aHd-G5vwmB9-l-VrMe0Y5htYPAldRp5jYUXxX--k
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QxIiwiaWQiOiI2NWM3ODgwMDNmMGJmZWVkN2E5MGNmMzMiLCJpYXQiOjE3MDc1NzUzMDksImV4cCI6MTcwNzU3ODkwOX0.fotrCHf5O8EjSeRECMRBoXbPK0jNjAcF9SwigN2nXqU
 {
   "title": "dgf",
   "author": "author test123",
@@ -15,9 +14,9 @@ POST http://localhost:3003/api/users HTTP/1.1
 content-type: application/json
 
 {
-    "username": "asdasdasd",
-    "name": "tasdadssda",
-    "password": "werewrwre"
+    "username": "test",
+    "name": "test",
+    "password": "test"
 }
 
 #####
@@ -25,6 +24,22 @@ POST http://localhost:3003/api/login HTTP/1.1
 content-type: application/json
 
 {
-    "username": "asdasdasd",
-    "password": "werewrwre"
+    "username": "test1",
+    "password": "test1"
 }
+
+#####
+
+PUT http://localhost:3003/api/blogs/ HTTP/1.1
+content-type: application/json
+
+{
+  "title": "dgf",
+  "author": "author test123",
+  "url": "dsgf",
+  "likes": 1004
+}
+
+#####
+POST http://localhost:3003/api/testing/reset HTTP/1.1
+content-type: application/json
